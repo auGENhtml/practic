@@ -12,5 +12,34 @@
             <input type="password" name="password" size="15" maxlength="30" />
           </p>
         </form>
+        <form action="comments.html">
+          <p>Что вы думаете?</p>
+          <textarea name="comments" rows="8" cols="80">Введите свой комментарий</textarea>
+        </form>
+        <form action="genre.html">
+          <p>Выберите жанр музыки
+          <br/>
+          <input type="radio" name="genre" value="rock" checked="checked"/> Рок
+          <input type="radio" name="genre" value="pop" checked="checked"/> Поп
+          <input type="radio" name="genre" value="jazz" checked="checked"/> Джазз
+          </p>
+          <p>Выберите жанр музыки
+          <br/>
+          <input type="checkbox" name="genre" value="rock" checked="checked"/> Рок
+          <input type="checkbox" name="genre" value="pop" checked="checked"/> Поп
+          <input type="checkbox" name="genre" value="jazz" checked="checked"/> Джазз
+          </P>
+          <p>Жанр музыки</p>
+          <select name="genre">
+            <option value="Рок">Рок</option>
+            <option value="Поп">Поп</option>
+            <option value="Джазз">Джазз</option>
+          </select>
+        </form>
+        <form action="post.html" method="post">
+          <p>Загрузите свою песню:</p>
+          <input type="file" name="pesnya" /><br />
+          <input type="submit" value="Загрузить" />
+        </form>
       </body>
 </html>
